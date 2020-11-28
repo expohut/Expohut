@@ -1,10 +1,11 @@
 :root
 {
-  --Theme-Color2: #266150;
-  --Theme-Color: #17b978;
-  --Icon-Color: #17b978;
-  --Primary-color: #f7fafd;
-  --Second-Primary-Color: #E9F6FB;
+  /* --Theme-Color: #17b978; */
+  /* --Icon-Color: #17b978; */
+  --Theme-Color: #005F37;
+  --Icon-Color-Two: #005F37;
+  --Primary-color: #f4f7fa;
+  --Second-Primary-Color: #d1d1d1;
   --Full-White: #FFFFFF;
   --Footer-Background:  #2a363b;
   --Title-Font-Color: #333;
@@ -77,12 +78,12 @@
     text-decoration: none;
     background: var(--Theme-Color);
     color: var(--Full-White);
-    padding: 15px 20px;
+    padding: 10px 20px;
     outline: none;
     border: none;
     cursor: pointer;
     font-size: 18px;
-    width: 220px;
+    width: 200px;
     text-align: center;
     margin-top: 15px;
 }

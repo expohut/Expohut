@@ -21,7 +21,8 @@
    
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <!--Vue.js CDN File Linking-->
-    <link rel="stylesheet" href="JavaScript-Files/vue.js">
+    <link rel="stylesheet" href="../JavaScript-Files/vue.js">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   </head>
   <script>
     function toggle(){
@@ -30,15 +31,15 @@
     }
 </script>
   <body>
-    <header id="header">
-      <a href="../Index.html" class="logo"><img src="../Assets-Files/Logo.png" alt=""></a>
+    <header id="header"> <!--Header Start-->
+      <a href="../Index.html" class="logo"><img src="../Assets-Files/Logo.png" alt="ExpoHut Logo"></a>
       <ul>
-          <li><a href="#home" onclick="toggle()">এক্সপোহাট কি?</a></li>
-          <li><a href="../HTML-Files/login.html" onclick="toggle()">লগ ইন</a></li>
-          <li><a href="../HTML-Files/regi.html" onclick="toggle()">সাইন আপ</a></li>
+          <li><a href="#About" onclick="toggle()">এক্সপোহাট কি?</a></li>
+          <li><a href="../HTML-Files/login.html" onclick="toggle()"><i class="fas fa-user"></i>  লগ ইন</a></li>
+          <li><a href="../HTML-Files/regi.html" onclick="toggle()"><i class="fas fa-user-plus"></i>  সাইন আপ</a></li>
       </ul>
       <div class="toggle" onclick="toggle()"></div>
-  </header>
+    </header> <!--Header End-->
 
 
     <section class="Container mrit">
@@ -90,7 +91,7 @@
                 <p class="price">৳ ৭২৫</p>
                 <div class="ButtonRating">
                     <button>পোষ্টকারির প্রোফাইল</button>
-                <div class="rating">
+                <div class="rating" id="rating">
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
@@ -128,25 +129,37 @@
       <div class="Container"> <!--Container Start-->
         <div class="Top-Footer-Items">
           <div class="Footer-Items-one">
-            <h4>expohut</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae modi facilis repellendus vero fuga sed unde. Eaque consequuntur impedit deserunt sequi fugiat. Soluta harum facere molestiae eos suscipit atque tempore?</p>
-            </p>
+            <h4>এক্সপোহাট</h4>
+            <div class="Title-Bar"></div>
+            <p>এক্সোহাট হছে এমন একটি মাধ্যম যেখানে আপনি বিক্রি করতে পারবেন আপনার তৈরিকৃত শিল্প। সৃজনশীল এবং মননশীল মানুষদের জন্য এক্সপোহাট হছে প্রতিভা বিকশিত করার উত্তম জায়গা। আপনি যদি ছবি আকতে পারেন,মাটির গহনা তৈরি করতে পারেন, কাঠের বিভিন্ন সোপিজ বানাতে পারেন এছাড়াও আরও অনেক প্রতিভার একটিও যদি আপনি শখের বসেও করে থাকেন তবে তা এক্সপোহাটে বিজ্ঞাপন দিন।</p>
+            <p>-আপনার পছন্দ অনুযায়ী মূল্য নির্ধারন করে পোষ্ট করেন আপনার প্রোফাইলে।</p>
+              <p>-চাইলে আপনিও কিনে নিতে পারেন আপনার পছন্দের জিনিসটি এক্সপোহাট থেকে।</p>
+            <nav class="SocialIcons">
+              <ul>
+                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                <li><a href=""><i class="fab fa-youtube"></i></a></li>
+              </ul>
+            </nav>
           </div>
           <div class="Footer-Items-Two">
-            <h4>services category</h4>
+            <h4>ক্যাট্যাগরি</h4>
+            <div class="Title-Bar"></div>
             <ul>
-              <li><a href=""><i class="fas fa-angle-right"></i> clay decoration</a></li>
-              <li><a href=""><i class="fas fa-angle-right"></i> fabric design</a></li>
-              <li><a href=""><i class="fas fa-angle-right"></i> craft design</a></li>
-              <li><a href=""><i class="fas fa-angle-right"></i> wooden craft</a></li>
-              <li><a href=""><i class="fas fa-angle-right"></i> jewelry maker</a></li>
-              <li><a href=""><i class="fas fa-angle-right"></i> stitch art</a></li>
-              <li><a href=""><i class="fas fa-angle-right"></i> origami</a></li>
-              <li><a href=""><i class="fas fa-angle-right"></i> art</a></li>
+              <li><a href=""><i class="fas fa-angle-right"></i> ক্রাফট শিল্প</a></li>
+              <li><a href=""><i class="fas fa-angle-right"></i> চিত্র শিল্প</a></li>
+              <li><a href=""><i class="fas fa-angle-right"></i> সেলাই শিল্প</a></li>
+              <li><a href=""><i class="fas fa-angle-right"></i> কুটির শিল্প</a></li>
+              <li><a href=""><i class="fas fa-angle-right"></i> হ্যান্ডমেইড জুয়েলারি</a></li>
+              <li><a href=""><i class="fas fa-angle-right"></i> ফ্যাব্রিক নকশা</a></li>
+              <li><a href="../HTML-Files/MritShilpo.html"><i class="fas fa-angle-right"></i> মৃত্তিকা শিল্প</a></li>
+              <li><a href=""><i class="fas fa-angle-right"></i> ওডেন ক্রাফট</a></li>
             </ul>
           </div>
           <div class="Footer-Items-Three">
-            <h4>let's start</h4>
+            <h4>আরও জানুন</h4>
+            <div class="Title-Bar"></div>
             <ul>
               <li><a href=""><i class="fas fa-angle-right"></i> get registered</a></li>
               <li><a href=""><i class="fas fa-angle-right"></i> watch demo</a></li>

@@ -7,15 +7,20 @@
 
 /*Google Fonts Link*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
-
+::selection{
+  background-color: #005F37;
+  color: #fff;
+  padding: 10px;
+}
 /*Variables Declaration*/
 :root
 {
-  /* --Theme-Color: #266150; */
-  --Theme-Color: #17b978;
-  --Icon-Color: #17b978;
+  /* --Theme-Color: #17b978; */
+  /* --Icon-Color: #17b978; */
+  --Theme-Color: #005F37;
+  --Icon-Color-Two: #005F37;
   --Primary-color: #f4f7fa;
-  --Second-Primary-Color: #E9F6FB;
+  --Second-Primary-Color: #d1d1d1;
   --Full-White: #FFFFFF;
   --Footer-Background:  #2a363b;
   --Title-Font-Color: #333;
@@ -57,14 +62,14 @@ h1,h2,h3,h4,h5,h6
 header{
   position: fixed;
   width: 100%;
-  height: 80px;
+  height: 65px;
   padding: 0 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: var(--Theme-Color);
   z-index: 1000;
-  box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.158);
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.158);
 }
 header img{
   width: 30px;
@@ -171,8 +176,8 @@ header ul li a:hover{
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background: linear-gradient(#3aafa98c,#3aafa98c),url("../Assets-Files/Banner.jpg"); */
-  background-color: var(--Theme-Color);
+  background: linear-gradient(#005f37be,#005f37cb),url("../Assets-Files/bgbanner2.jpeg");
+  /* background: var(--Theme-Color); */
   min-height: 100vh;
   width: 100%;
   background-size: cover;
@@ -268,7 +273,7 @@ header ul li a:hover{
   left: 0;
   width: 25px;
   height: 8px;
-  background: var(--Icon-Color);
+  background: var(--Icon-Color-Two);
   border-radius: 3px;
   animation: BG-Move 3s linear infinite;
 }
@@ -308,7 +313,7 @@ header ul li a:hover{
 .Single-Items i
 {
   font-size: 40px;
-  color: var(--Icon-Color);
+  color: var(--Icon-Color-Two);
   margin-bottom: 20px;
 }
 .Single-Items .Foo-Bar
@@ -323,7 +328,7 @@ header ul li a:hover{
 .Single-Items:hover .Foo-Bar
 {
   width: 80px;
-  background: var(--Icon-Color);
+  background: var(--Icon-Color-Two);
 }
 .Single-Items h4
 {
@@ -372,7 +377,8 @@ header ul li a:hover{
 .About-Expohut
 {
   background: var(--Theme-Color);
-  padding: 35px 0;
+  padding: 70px 0;
+  /* clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 90%, 0 100%); */
 }
 .About-Items
 {
@@ -390,7 +396,7 @@ header ul li a:hover{
 {
   text-transform: capitalize;
   font-size: 25px;
-  color: var(--Title-Font-Colot-Two);
+  color: var(--Full-White);
 }
 .About-Left .subtitle
 {
@@ -411,19 +417,19 @@ header ul li a:hover{
   text-transform: uppercase;
   font-size: 13px;
   font-weight: bold;
-  color: var(--Title-Font-Color);
+  color: var(--Full-White);
   background: var(--Theme-Color);
   padding: 12px 25px;
   display: inline-block;
-  box-shadow: 2px 2px 3px #17885b,
-              -2px -2px 3px #15fca0;
+  box-shadow: 2px 2px 3px #023822,
+              -2px -2px 3px #0a7548;
   border-radius: 3px;
   transition: .5s;
 }
 .About-Left a:hover
 {
-  box-shadow: inset 1px 1px 2px #17885b,
-              inset -1px -1px 2px #15fca0;
+  box-shadow: inset 1px 1px 2px #023822,
+              inset -1px -1px 2px #0a7548;
 }
 .About-Left a:hover .About-btn
 {
@@ -457,11 +463,11 @@ header ul li a:hover{
   display: block;
   padding: 8px 0;
   margin: 8px 0px;
-  transition: .5s;
+  /* transition: .5s; */
 }
 .About-Side-Menu ul li a:hover
 {
-  color: var(--Primary-Color);
+  color: var(--Second-Primary-Color);
 }
 .About-Side-Menu ul li a i
 {
@@ -470,7 +476,7 @@ header ul li a:hover{
 }
 .About-Side-Menu ul li a:hover i
 {
-  color: var(--Subtitle-Font-Color);
+  color: var(--Second-Primary-Color);
   transform: rotate(180deg);
 }
 
@@ -505,14 +511,14 @@ header ul li a:hover{
 {
   text-decoration: none;
   display: block;
-  color: var(--Full-White);
+  color: var(--Icon-Color-Two);
 }
 .Footer-Items-one .SocialIcons ul li a i
 {
   font-size: 15px;
   width: 35px;
   height: 35px;
-  background: var(--Theme-Color);
+  background: var(--Full-White);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -520,8 +526,8 @@ header ul li a:hover{
 }
 .Footer-Items-one .SocialIcons ul li a i:hover
 {
-  background:  #c3ffe7;
-  color: var(--Theme-Color);
+  background: var(--Theme-Color);
+  color: var(--Full-White);
 }
 .Footer-Items-one h4,
 .Footer-Items-Two h4,
@@ -564,8 +570,7 @@ header ul li a:hover{
 }
 .Footer-Items-one p
 {
-  /* color: var(--Subtitle-Font-Color); */
-  color: #c2c2c2;
+  color: var(--Subtitle-Color);
   font-size: 15px;
   line-height: 24px;
 }
@@ -583,8 +588,7 @@ header ul li a:hover{
 {
   text-decoration: none;
   text-transform: capitalize;
-  /* color: var(--Subtitle-Font-Color); */
-  color: #c2c2c2;
+  color: var(--Subtitle-Color);
   font-size: 15px;
   display: inline-block;
   margin: 3px 0;
@@ -593,7 +597,7 @@ header ul li a:hover{
 .Footer-Items-Two ul li a i,
 .Footer-Items-Three ul li a i
 {
-  color: var(--Icon-Color);
+  color: var(--Icon-Color-Two);
   transition: .5s;
 }
 .Footer-Items-Two ul li a:hover,
